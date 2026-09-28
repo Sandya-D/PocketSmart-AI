@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Recommendations | PocketSmart AI</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <!-- ========================================
+         SIDEBAR
+    ========================================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo-area">
+
+            <div class="logo-icon">
+                ₹
+            </div>
+
+            <div>
+                <h2>PocketSmart</h2>
+                <span>AI Finance Assistant</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                🏠
+                <span>Dashboard</span>
+            </a>
+
+            <a href="transactions.html">
+                💰
+                <span>Transactions</span>
+            </a>
+
+            <a href="budget.html">
+                🎯
+                <span>Budget</span>
+            </a>
+
+            <a href="analytics.html">
+                📈
+                <span>Analytics</span>
+            </a>
+
+            <a
+                href="recommendations.html"
+                class="active"
+            >
+                🤖
+                <span>AI Insights</span>
+            </a>
+
+            <a href="#">
+                📄
+                <span>Reports</span>
+            </a>
+
+            <a href="#">
+                ⚙️
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="user-mini">
+
+                <div class="user-avatar">
+                    JD
+                </div>
+
+                <div>
+                    <strong>John Doe</strong>
+                    <small>Personal Account</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
+
+    <main class="main-content">
+
+        <header class="top-header">
+
+            <div>
+
+                <h1>
+                    AI Recommendations 🤖
+                </h1>
+
+                <p>
+                    Smart suggestions based on your spending habits
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="notification-btn">
+                    🔔
+                </button>
+
+                <div class="profile-circle">
+                    JD
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ========================================
+             AI OVERVIEW
+        ========================================= -->
+
+        <section class="dashboard-card ai-main-card">
+
+            <div class="ai-main-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <span class="section-label">
+                    POCKETSMART AI
+                </span>
+
+                <h2>
+                    Your Personalized Financial Assistant
+                </h2>
+
+                <p>
+                    We've analyzed your recent transactions,
+                    spending patterns, and savings behavior to
+                    generate personalized recommendations.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             RECOMMENDATION CARDS
+        ========================================= -->
+
+        <section class="recommendation-grid">
+
+
+            <!-- SAVING -->
+            <div class="dashboard-card recommendation-card">
+
+                <div class="recommendation-icon saving-icon">
+                    💰
+                </div>
+
+                <span class="recommendation-type">
+                    SAVING OPPORTUNITY
+                </span>
+
+                <h3>
+                    Increase Your Monthly Savings
+                </h3>
+
+                <p>
+                    Your current spending suggests that you
+                    could potentially save more by reviewing
+                    your discretionary expenses.
+                </p>
+
+                <div class="recommendation-highlight">
+
+                    <strong>
+                        Potential saving
+                    </strong>
+
+                    <span>
+                        ₹3,500 / month
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOD -->
+            <div class="dashboard-card recommendation-card">
+
+                <div class="recommendation-icon food-icon">
+                    🍔
+                </div>
+
+                <span class="recommendation-type">
+                    SPENDING ALERT
+                </span>
+
+                <h3>
+                    Review Food & Dining
+                </h3>
+
+                <p>
+                    Food and dining is one of your larger
+                    spending categories. Setting a weekly
+                    spending limit could help control costs.
+                </p>
+
+                <div class="recommendation-highlight">
+
+                    <strong>
+                        Suggested limit
+                    </strong>
+
+                    <span>
+                        ₹2,000 / week
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- SHOPPING -->
+            <div class="dashboard-card recommendation-card">
+
+                <div class="recommendation-icon shopping-icon">
+                    🛍
+                </div>
+
+                <span class="recommendation-type">
+                    SMART SHOPPING
+                </span>
+
+                <h3>
+                    Reduce Impulse Purchases
+                </h3>
+
+                <p>
+                    Consider waiting 24 hours before making
+                    non-essential purchases. This can help
+                    reduce unnecessary spending.
+                </p>
+
+                <div class="recommendation-highlight">
+
+                    <strong>
+                        Suggested rule
+                    </strong>
+
+                    <span>
+                        24-hour wait
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRANSPORT -->
+            <div class="dashboard-card recommendation-card">
+
+                <div class="recommendation-icon transport-icon">
+                    🚕
+                </div>
+
+                <span class="recommendation-type">
+                    EXPENSE OPTIMIZATION
+                </span>
+
+                <h3>
+                    Optimize Transportation
+                </h3>
+
+                <p>
+                    Compare transportation options and consider
+                    combining trips when possible to reduce
+                    recurring travel expenses.
+                </p>
+
+                <div class="recommendation-highlight">
+
+                    <strong>
+                        Monthly target
+                    </strong>
+
+                    <span>
+                        ₹4,500
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ========================================
+             FINANCIAL HEALTH
+        ========================================= -->
+
+        <section class="dashboard-card financial-health-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="section-label">
+                        AI ANALYSIS
+                    </span>
+
+                    <h2>
+                        Financial Health Overview
+                    </h2>
+
+                </div>
+
+                <span class="health-badge">
+                    Good
+                </span>
+
+            </div>
+
+
+            <div class="health-grid">
+
+                <div class="health-item">
+
+                    <span>
+                        Saving Behavior
+                    </span>
+
+                    <div class="health-progress">
+
+                        <div
+                            class="health-progress-fill"
+                            style="width: 78%;"
+                        ></div>
+
+                    </div>
+
+                    <strong>
+                        78%
+                    </strong>
+
+                </div>
+
+
+                <div class="health-item">
+
+                    <span>
+                        Budget Discipline
+                    </span>
+
+                    <div class="health-progress">
+
+                        <div
+                            class="health-progress-fill"
+                            style="width: 72%;"
+                        ></div>
+
+                    </div>
+
+                    <strong>
+                        72%
+                    </strong>
+
+                </div>
+
+
+                <div class="health-item">
+
+                    <span>
+                        Expense Control
+                    </span>
+
+                    <div class="health-progress">
+
+                        <div
+                            class="health-progress-fill"
+                            style="width: 68%;"
+                        ></div>
+
+                    </div>
+
+                    <strong>
+                        68%
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             DAILY AI TIP
+        ========================================= -->
+
+        <section class="dashboard-card daily-tip-card">
+
+            <div class="tip-icon">
+                💡
+            </div>
+
+            <div>
+
+                <span class="section-label">
+                    TODAY'S AI TIP
+                </span>
+
+                <h3>
+                    Small changes can create big savings.
+                </h3>
+
+                <p>
+                    Try identifying one recurring expense you
+                    can reduce this week. Redirect the saved
+                    amount toward your savings goal.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             FOOTER
+        ========================================= -->
+
+        <footer class="dashboard-footer">
+
+            <p>
+                © 2026 PocketSmart AI.
+                Smart decisions. Better future.
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+<script src="js/recommendations.js"></script>
+
+
+</body>
+
+</html>

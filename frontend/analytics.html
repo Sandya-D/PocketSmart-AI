@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics | PocketSmart AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <span class="logo-icon">P</span>
+
+            <span>
+                PocketSmart <strong>AI</strong>
+            </span>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">
+                MAIN MENU
+            </p>
+
+
+            <a href="dashboard.html"
+               class="sidebar-link">
+
+                <span>▦</span>
+                Dashboard
+
+            </a>
+
+
+            <a href="transactions.html"
+               class="sidebar-link">
+
+                <span>↕</span>
+                Transactions
+
+            </a>
+
+
+            <a href="budget.html"
+               class="sidebar-link">
+
+                <span>◎</span>
+                Budget
+
+            </a>
+
+
+            <a href="analytics.html"
+               class="sidebar-link active">
+
+                <span>◔</span>
+                Analytics
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>✦</span>
+                AI Insights
+
+            </a>
+
+
+            <p class="nav-title second-title">
+                TOOLS
+            </p>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>▤</span>
+                Reports
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>⚙</span>
+                Settings
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-help">
+
+                <span>?</span>
+
+                <div>
+
+                    <strong>
+                        Need Help?
+                    </strong>
+
+                    <small>
+                        We're here for you
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <a href="index.html"
+               class="logout-link">
+
+                ← Log out
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="dashboard-main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="dashboard-topbar">
+
+            <div>
+
+                <p class="dashboard-date">
+                    Financial Insights
+                </p>
+
+                <h1>
+                    Spending Analytics 📈
+                </h1>
+
+            </div>
+
+
+            <div class="dashboard-actions">
+
+                <button class="notification-btn">
+                    🔔
+                </button>
+
+
+                <div class="user-profile">
+
+                    <div class="user-avatar">
+                        JD
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            John Doe
+                        </strong>
+
+                        <small>
+                            Personal Account
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ANALYTICS SUMMARY -->
+
+        <section class="summary-grid">
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Total Income
+                    </span>
+
+                    <div class="summary-icon green">
+                        ↑
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹65,000
+                </h2>
+
+                <p class="positive">
+                    This Month
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Total Expenses
+                    </span>
+
+                    <div class="summary-icon red">
+                        ↓
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹38,420
+                </h2>
+
+                <p class="negative">
+                    This Month
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Total Savings
+                    </span>
+
+                    <div class="summary-icon purple">
+                        ✦
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹26,580
+                </h2>
+
+                <p class="positive">
+                    40.9% savings rate
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Daily Average
+                    </span>
+
+                    <div class="summary-icon">
+                        ◔
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹1,280
+                </h2>
+
+                <p>
+                    Average spending
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHART SECTION -->
+
+        <section class="analytics-grid">
+
+
+            <!-- SPENDING BY CATEGORY -->
+
+            <div class="dashboard-card analytics-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Spending by Category
+                        </h3>
+                        <div class="chart-container">
+    <canvas id="spendingChart"></canvas>
+</div>
+
+                        <p>
+                            Where your money is going
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-chart">
+
+
+                    <div class="category-row">
+
+                        <div class="category-label">
+
+                            <span class="category-dot food-dot"></span>
+
+                            <span>
+                                Food & Dining
+                            </span>
+
+                        </div>
+
+                        <strong>
+                            ₹9,200
+                        </strong>
+
+                    </div>
+
+
+                    <div class="analytics-bar">
+
+                        <div
+                            class="analytics-bar-fill"
+                            style="width: 78%;"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="category-row">
+
+                        <div class="category-label">
+
+                            <span class="category-dot shopping-dot"></span>
+
+                            <span>
+                                Shopping
+                            </span>
+
+                        </div>
+
+                        <strong>
+                            ₹7,800
+                        </strong>
+
+                    </div>
+
+
+                    <div class="analytics-bar">
+
+                        <div
+                            class="analytics-bar-fill"
+                            style="width: 66%;"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="category-row">
+
+                        <div class="category-label">
+
+                            <span class="category-dot transport-dot"></span>
+
+                            <span>
+                                Transportation
+                            </span>
+
+                        </div>
+
+                        <strong>
+                            ₹5,600
+                        </strong>
+
+                    </div>
+
+
+                    <div class="analytics-bar">
+
+                        <div
+                            class="analytics-bar-fill"
+                            style="width: 48%;"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="category-row">
+
+                        <div class="category-label">
+
+                            <span class="category-dot bills-dot"></span>
+
+                            <span>
+                                Bills & Utilities
+                            </span>
+
+                        </div>
+
+                        <strong>
+                            ₹6,300
+                        </strong>
+
+                    </div>
+
+
+                    <div class="analytics-bar">
+
+                        <div
+                            class="analytics-bar-fill"
+                            style="width: 53%;"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="category-row">
+
+                        <div class="category-label">
+
+                            <span class="category-dot entertainment-dot"></span>
+
+                            <span>
+                                Entertainment
+                            </span>
+
+                        </div>
+
+                        <strong>
+                            ₹4,550
+                        </strong>
+
+                    </div>
+
+
+                    <div class="analytics-bar">
+
+                        <div
+                            class="analytics-bar-fill"
+                            style="width: 39%;"
+                        ></div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- INCOME VS EXPENSES -->
+
+            <div class="dashboard-card analytics-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Income vs Expenses
+                        </h3>
+
+                        <p>
+                            Monthly comparison
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="comparison-chart">
+
+
+                    <div class="chart-month">
+
+                        <div class="chart-bars">
+
+                            <div
+                                class="chart-income"
+                                style="height: 90%;"
+                            ></div>
+
+                            <div
+                                class="chart-expense"
+                                style="height: 58%;"
+                            ></div>
+
+                        </div>
+
+                        <span>
+                            Jun
+                        </span>
+
+                    </div>
+
+
+                    <div class="chart-month">
+
+                        <div class="chart-bars">
+
+                            <div
+                                class="chart-income"
+                                style="height: 94%;"
+                            ></div>
+
+                            <div
+                                class="chart-expense"
+                                style="height: 64%;"
+                            ></div>
+
+                        </div>
+
+                        <span>
+                            Jul
+                        </span>
+
+                    </div>
+
+
+                    <div class="chart-month">
+
+                        <div class="chart-bars">
+
+                            <div
+                                class="chart-income"
+                                style="height: 88%;"
+                            ></div>
+
+                            <div
+                                class="chart-expense"
+                                style="height: 72%;"
+                            ></div>
+
+                        </div>
+
+                        <span>
+                            Aug
+                        </span>
+
+                    </div>
+
+
+                    <div class="chart-month">
+
+                        <div class="chart-bars">
+
+                            <div
+                                class="chart-income"
+                                style="height: 96%;"
+                            ></div>
+
+                            <div
+                                class="chart-expense"
+                                style="height: 62%;"
+                            ></div>
+
+                        </div>
+
+                        <span>
+                            Sep
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="chart-legend">
+
+                    <span>
+                        <i class="legend-income"></i>
+                        Income
+                    </span>
+
+                    <span>
+                        <i class="legend-expense"></i>
+                        Expenses
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- INSIGHTS -->
+
+        <section class="analytics-bottom-grid">
+
+
+            <div class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Spending Insights
+                        </h3>
+
+                        <p>
+                            Important patterns in your spending
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="insight-list">
+
+
+                    <div class="analytics-insight">
+
+                        <div class="insight-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Food is your largest category
+                            </strong>
+
+                            <p>
+                                Food & Dining accounts for a
+                                significant portion of your
+                                monthly expenses.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="analytics-insight">
+
+                        <div class="insight-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Your savings rate is healthy
+                            </strong>
+
+                            <p>
+                                You are currently saving around
+                                40.9% of your monthly income.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="analytics-insight">
+
+                        <div class="insight-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Entertainment spending is rising
+                            </strong>
+
+                            <p>
+                                Consider reviewing entertainment
+                                expenses to stay within your budget.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- SAVINGS GOAL -->
+
+            <div class="dashboard-card savings-goal-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Savings Goal
+                        </h3>
+
+                        <p>
+                            Your progress this month
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="savings-circle">
+
+                    <div>
+
+                        <strong>
+                            68%
+                        </strong>
+
+                        <span>
+                            Complete
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="savings-goal-info">
+
+                    <strong>
+                        ₹34,000
+                    </strong>
+
+                    <span>
+                        of ₹50,000 goal
+                    </span>
+
+                </div>
+
+
+                <div class="budget-progress">
+
+                    <div
+                        class="budget-progress-fill"
+                        style="width: 68%;"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- AI ANALYTICS TIP -->
+
+        <section class="ai-insight-card">
+
+            <div class="ai-insight-icon">
+                ✦
+            </div>
+
+
+            <div class="ai-insight-content">
+
+                <span>
+                    AI ANALYTICS INSIGHT
+                </span>
+
+                <h3>
+                    Your spending pattern is improving.
+                </h3>
+
+                <p>
+                    Based on your recent activity, keeping
+                    food and entertainment expenses under
+                    control could increase your monthly savings.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <footer class="dashboard-footer">
+
+            PocketSmart AI © 2026
+
+            <span>
+                Smart money decisions, made simpler.
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/analytics.js"></script>
+
+</body>
+
+</html>

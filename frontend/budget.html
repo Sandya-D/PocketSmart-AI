@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Budget Planner | PocketSmart AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <span class="logo-icon">P</span>
+
+            <span>
+                PocketSmart <strong>AI</strong>
+            </span>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">
+                MAIN MENU
+            </p>
+
+
+            <a href="dashboard.html"
+               class="sidebar-link">
+
+                <span>▦</span>
+                Dashboard
+
+            </a>
+
+
+            <a href="transactions.html"
+               class="sidebar-link">
+
+                <span>↕</span>
+                Transactions
+
+            </a>
+
+
+            <a href="budget.html"
+               class="sidebar-link active">
+
+                <span>◎</span>
+                Budget
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>◔</span>
+                Analytics
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>✦</span>
+                AI Insights
+
+            </a>
+
+
+            <p class="nav-title second-title">
+                TOOLS
+            </p>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>▤</span>
+                Reports
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>⚙</span>
+                Settings
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-help">
+
+                <span>?</span>
+
+                <div>
+
+                    <strong>
+                        Need Help?
+                    </strong>
+
+                    <small>
+                        We're here for you
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <a href="index.html"
+               class="logout-link">
+
+                ← Log out
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="dashboard-main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="dashboard-topbar">
+
+            <div>
+
+                <p class="dashboard-date">
+                    Financial Planning
+                </p>
+
+                <h1>
+                    Budget Planner 📊
+                </h1>
+
+            </div>
+
+
+            <div class="dashboard-actions">
+
+                <button class="notification-btn">
+                    🔔
+                </button>
+
+
+                <div class="user-profile">
+
+                    <div class="user-avatar">
+                        JD
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            John Doe
+                        </strong>
+
+                        <small>
+                            Personal Account
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- BUDGET SUMMARY -->
+
+        <section class="summary-grid">
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Monthly Budget
+                    </span>
+
+                    <div class="summary-icon purple">
+                        ₹
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹50,000
+                </h2>
+
+                <p>
+                    Planned spending
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Total Spent
+                    </span>
+
+                    <div class="summary-icon red">
+                        ↓
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹38,420
+                </h2>
+
+                <p class="negative">
+                    76.8% used
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Remaining
+                    </span>
+
+                    <div class="summary-icon green">
+                        ✓
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹11,580
+                </h2>
+
+                <p class="positive">
+                    Available
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Budget Health
+                    </span>
+
+                    <div class="summary-icon">
+                        ✦
+                    </div>
+
+                </div>
+
+                <h2>
+                    Good
+                </h2>
+
+                <p class="positive">
+                    On track
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ADD BUDGET -->
+
+        <section class="transaction-form-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <h3>
+                        Create Category Budget
+                    </h3>
+
+                    <p>
+                        Set a spending limit for a category
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="budgetForm"
+                  class="transaction-form">
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="budgetCategory">
+                            Category
+                        </label>
+
+                        <select
+                            id="budgetCategory"
+                            required
+                        >
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option value="food">
+                                🍔 Food & Dining
+                            </option>
+
+                            <option value="shopping">
+                                🛍 Shopping
+                            </option>
+
+                            <option value="transport">
+                                🚕 Transportation
+                            </option>
+
+                            <option value="entertainment">
+                                🎬 Entertainment
+                            </option>
+
+                            <option value="bills">
+                                🧾 Bills & Utilities
+                            </option>
+
+                            <option value="health">
+                                ❤️ Health
+                            </option>
+
+                            <option value="education">
+                                📚 Education
+                            </option>
+
+                            <option value="other">
+                                📦 Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="budgetAmount">
+                            Monthly Budget
+                        </label>
+
+                        <input
+                            type="number"
+                            id="budgetAmount"
+                            placeholder="₹ 0.00"
+                            min="1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="budgetMonth">
+                            Month
+                        </label>
+
+                        <input
+                            type="month"
+                            id="budgetMonth"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="add-transaction-btn"
+                >
+
+                    + Set Budget
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- CATEGORY BUDGETS -->
+
+        <section class="dashboard-card budget-section">
+
+            <div class="card-header">
+
+                <div>
+
+                    <h3>
+                        Category Budgets
+                    </h3>
+
+                    <p>
+                        Track your spending against your limits
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="budget-grid">
+
+
+                <!-- FOOD -->
+
+                <div class="budget-card">
+
+                    <div class="budget-card-top">
+
+                        <div class="budget-category">
+
+                            <div class="budget-icon food">
+                                🍔
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Food & Dining
+                                </strong>
+
+                                <small>
+                                    Monthly budget
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="budget-percent">
+                            72%
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-amounts">
+
+                        <strong>
+                            ₹7,200
+                        </strong>
+
+                        <span>
+                            of ₹10,000
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-progress">
+
+                        <div
+                            class="budget-progress-fill"
+                            style="width: 72%;"
+                        ></div>
+
+                    </div>
+
+
+                    <p class="budget-status">
+                        ₹2,800 remaining
+                    </p>
+
+                </div>
+
+
+                <!-- SHOPPING -->
+
+                <div class="budget-card">
+
+                    <div class="budget-card-top">
+
+                        <div class="budget-category">
+
+                            <div class="budget-icon shopping">
+                                🛍
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Shopping
+                                </strong>
+
+                                <small>
+                                    Monthly budget
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="budget-percent">
+                            88%
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-amounts">
+
+                        <strong>
+                            ₹8,800
+                        </strong>
+
+                        <span>
+                            of ₹10,000
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-progress">
+
+                        <div
+                            class="budget-progress-fill warning"
+                            style="width: 88%;"
+                        ></div>
+
+                    </div>
+
+
+                    <p class="budget-status warning-text">
+                        ₹1,200 remaining
+                    </p>
+
+                </div>
+
+
+                <!-- TRANSPORT -->
+
+                <div class="budget-card">
+
+                    <div class="budget-card-top">
+
+                        <div class="budget-category">
+
+                            <div class="budget-icon transport">
+                                🚕
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Transportation
+                                </strong>
+
+                                <small>
+                                    Monthly budget
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="budget-percent">
+                            54%
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-amounts">
+
+                        <strong>
+                            ₹4,320
+                        </strong>
+
+                        <span>
+                            of ₹8,000
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-progress">
+
+                        <div
+                            class="budget-progress-fill"
+                            style="width: 54%;"
+                        ></div>
+
+                    </div>
+
+
+                    <p class="budget-status">
+                        ₹3,680 remaining
+                    </p>
+
+                </div>
+
+
+                <!-- ENTERTAINMENT -->
+
+                <div class="budget-card">
+
+                    <div class="budget-card-top">
+
+                        <div class="budget-category">
+
+                            <div class="budget-icon entertainment">
+                                🎬
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Entertainment
+                                </strong>
+
+                                <small>
+                                    Monthly budget
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="budget-percent">
+                            91%
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-amounts">
+
+                        <strong>
+                            ₹4,550
+                        </strong>
+
+                        <span>
+                            of ₹5,000
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-progress">
+
+                        <div
+                            class="budget-progress-fill danger"
+                            style="width: 91%;"
+                        ></div>
+
+                    </div>
+
+
+                    <p class="budget-status danger-text">
+                        Only ₹450 remaining
+                    </p>
+
+                </div>
+
+
+                <!-- BILLS -->
+
+                <div class="budget-card">
+
+                    <div class="budget-card-top">
+
+                        <div class="budget-category">
+
+                            <div class="budget-icon bills">
+                                🧾
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Bills & Utilities
+                                </strong>
+
+                                <small>
+                                    Monthly budget
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="budget-percent">
+                            63%
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-amounts">
+
+                        <strong>
+                            ₹6,300
+                        </strong>
+
+                        <span>
+                            of ₹10,000
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-progress">
+
+                        <div
+                            class="budget-progress-fill"
+                            style="width: 63%;"
+                        ></div>
+
+                    </div>
+
+
+                    <p class="budget-status">
+                        ₹3,700 remaining
+                    </p>
+
+                </div>
+
+
+                <!-- HEALTH -->
+
+                <div class="budget-card">
+
+                    <div class="budget-card-top">
+
+                        <div class="budget-category">
+
+                            <div class="budget-icon health">
+                                ❤️
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Health
+                                </strong>
+
+                                <small>
+                                    Monthly budget
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="budget-percent">
+                            32%
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-amounts">
+
+                        <strong>
+                            ₹1,600
+                        </strong>
+
+                        <span>
+                            of ₹5,000
+                        </span>
+
+                    </div>
+
+
+                    <div class="budget-progress">
+
+                        <div
+                            class="budget-progress-fill"
+                            style="width: 32%;"
+                        ></div>
+
+                    </div>
+
+
+                    <p class="budget-status">
+                        ₹3,400 remaining
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- AI BUDGET TIP -->
+
+        <section class="ai-insight-card">
+
+            <div class="ai-insight-icon">
+                ✦
+            </div>
+
+
+            <div class="ai-insight-content">
+
+                <span>
+                    AI BUDGET TIP
+                </span>
+
+                <h3>
+                    You're close to your shopping limit.
+                </h3>
+
+                <p>
+                    You've used 88% of your shopping budget.
+                    Consider reducing non-essential purchases
+                    for the rest of the month.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <footer class="dashboard-footer">
+
+            PocketSmart AI © 2026
+
+            <span>
+                Smart money decisions, made simpler.
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+<script src="js/budget.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | PocketSmart AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+    <!-- ======================================
+         SIDEBAR
+    ======================================= -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+
+        <div class="sidebar-logo">
+
+            <span class="logo-icon">P</span>
+
+            <span>
+                PocketSmart <strong>AI</strong>
+            </span>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">
+                MAIN MENU
+            </p>
+
+            <a href="dashboard.html"
+               class="sidebar-link active">
+
+                <span>▦</span>
+                Dashboard
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>↕</span>
+                Transactions
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>◎</span>
+                Budget
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>◔</span>
+                Analytics
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>✦</span>
+                AI Insights
+
+            </a>
+
+
+            <p class="nav-title second-title">
+                TOOLS
+            </p>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>▤</span>
+                Reports
+
+            </a>
+
+
+            <a href="#"
+               class="sidebar-link">
+
+                <span>⚙</span>
+                Settings
+
+            </a>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-help">
+
+                <span>?</span>
+
+                <div>
+                    <strong>Need Help?</strong>
+                    <small>We're here for you</small>
+                </div>
+
+            </div>
+
+
+            <a href="index.html"
+               class="logout-link">
+
+                ← Log out
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ======================================
+         MAIN CONTENT
+    ======================================= -->
+
+    <main class="dashboard-main">
+
+
+        <!-- Top Bar -->
+
+        <header class="dashboard-topbar">
+
+            <div>
+
+                <p class="dashboard-date">
+                    Sunday, September 27, 2026
+                </p>
+
+                <h1>
+                    Good morning, John 👋
+                </h1>
+
+            </div>
+
+
+            <div class="dashboard-actions">
+
+                <button class="notification-btn">
+                    🔔
+                </button>
+
+
+                <div class="user-profile">
+
+                    <div class="user-avatar">
+                        JD
+                    </div>
+
+                    <div>
+                        <strong>John Doe</strong>
+                        <small>Personal Account</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ======================================
+             SUMMARY CARDS
+        ======================================= -->
+
+        <section class="summary-grid">
+
+
+            <!-- Balance -->
+
+            <div class="summary-card balance-summary">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Total Balance
+                    </span>
+
+                    <div class="summary-icon">
+                        ₹
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹84,520.00
+                </h2>
+
+                <p class="positive">
+                    ↗ 12.5%
+                    <span>vs last month</span>
+                </p>
+
+            </div>
+
+
+            <!-- Income -->
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Monthly Income
+                    </span>
+
+                    <div class="summary-icon green">
+                        ↑
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹65,000
+                </h2>
+
+                <p class="positive">
+                    ↗ 8.2%
+                    <span>vs last month</span>
+                </p>
+
+            </div>
+
+
+            <!-- Expenses -->
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Monthly Expenses
+                    </span>
+
+                    <div class="summary-icon red">
+                        ↓
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹38,420
+                </h2>
+
+                <p class="negative">
+                    ↗ 4.7%
+                    <span>vs last month</span>
+                </p>
+
+            </div>
+
+
+            <!-- Savings -->
+
+            <div class="summary-card">
+
+                <div class="summary-card-top">
+
+                    <span>
+                        Monthly Savings
+                    </span>
+
+                    <div class="summary-icon purple">
+                        ✦
+                    </div>
+
+                </div>
+
+                <h2>
+                    ₹26,580
+                </h2>
+
+                <p class="positive">
+                    40.9%
+                    <span>savings rate</span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             MIDDLE SECTION
+        ======================================= -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- Spending Overview -->
+
+            <div class="dashboard-card spending-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Spending Overview
+                        </h3>
+
+                        <p>
+                            Your expenses this month
+                        </p>
+
+                    </div>
+
+
+                    <select>
+
+                        <option>
+                            This Month
+                        </option>
+
+                        <option>
+                            Last Month
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Fake Chart -->
+
+                <div class="chart-area">
+
+                    <div class="chart-line">
+
+                        <span style="height: 40%"></span>
+                        <span style="height: 65%"></span>
+                        <span style="height: 50%"></span>
+                        <span style="height: 80%"></span>
+                        <span style="height: 60%"></span>
+                        <span style="height: 90%"></span>
+                        <span style="height: 70%"></span>
+
+                    </div>
+
+                    <div class="chart-labels">
+
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- AI Insight -->
+
+            <div class="dashboard-card insight-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            ✦ AI Insight
+                        </h3>
+
+                        <p>
+                            Personalized for you
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="insight-main">
+
+                    <div class="big-insight-icon">
+                        ✨
+                    </div>
+
+                    <h4>
+                        You can save more this month!
+                    </h4>
+
+                    <p>
+                        Your food and shopping expenses
+                        are slightly higher than your
+                        usual monthly average.
+                    </p>
+
+                    <div class="insight-saving">
+
+                        <strong>
+                            ₹4,500
+                        </strong>
+
+                        <span>
+                            potential monthly savings
+                        </span>
+
+                    </div>
+
+                    <button class="insight-btn">
+                        View Recommendation →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             BOTTOM SECTION
+        ======================================= -->
+
+        <section class="dashboard-grid bottom-grid">
+
+
+            <!-- Recent Transactions -->
+
+            <div class="dashboard-card transactions-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Recent Transactions
+                        </h3>
+
+                        <p>
+                            Your latest activity
+                        </p>
+
+                    </div>
+
+                    <a href="#">
+                        View All →
+                    </a>
+
+                </div>
+
+
+                <div class="transaction-list">
+
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-left">
+
+                            <div class="transaction-icon food">
+                                🍔
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Food & Dining
+                                </strong>
+
+                                <small>
+                                    Today, 1:30 PM
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <strong class="expense">
+                            -₹850
+                        </strong>
+
+                    </div>
+
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-left">
+
+                            <div class="transaction-icon shopping">
+                                🛍
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Shopping
+                                </strong>
+
+                                <small>
+                                    Yesterday
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <strong class="expense">
+                            -₹2,400
+                        </strong>
+
+                    </div>
+
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-left">
+
+                            <div class="transaction-icon salary">
+                                💰
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Salary
+                                </strong>
+
+                                <small>
+                                    Sep 25, 2026
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <strong class="income">
+                            +₹65,000
+                        </strong>
+
+                    </div>
+
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-left">
+
+                            <div class="transaction-icon transport">
+                                🚕
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Transportation
+                                </strong>
+
+                                <small>
+                                    Sep 24, 2026
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <strong class="expense">
+                            -₹720
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- Budget Progress -->
+
+            <div class="dashboard-card budget-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Budget Progress
+                        </h3>
+
+                        <p>
+                            September 2026
+                        </p>
+
+                    </div>
+
+                    <a href="#">
+                        Manage →
+                    </a>
+
+                </div>
+
+
+                <div class="budget-item">
+
+                    <div class="budget-info">
+
+                        <span>
+                            🍔 Food
+                        </span>
+
+                        <strong>
+                            ₹8,200 / ₹10,000
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress food-progress">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="budget-item">
+
+                    <div class="budget-info">
+
+                        <span>
+                            🛍 Shopping
+                        </span>
+
+                        <strong>
+                            ₹7,500 / ₹8,000
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress shopping-progress">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="budget-item">
+
+                    <div class="budget-info">
+
+                        <span>
+                            🚕 Transport
+                        </span>
+
+                        <strong>
+                            ₹3,200 / ₹5,000
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress transport-progress">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="budget-item">
+
+                    <div class="budget-info">
+
+                        <span>
+                            🎬 Entertainment
+                        </span>
+
+                        <strong>
+                            ₹2,100 / ₹3,000
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress entertainment-progress">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer class="dashboard-footer">
+
+            PocketSmart AI © 2026
+            <span>Smart money decisions, made simpler.</span>
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
