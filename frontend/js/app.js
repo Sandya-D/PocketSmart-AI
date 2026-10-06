@@ -36,17 +36,10 @@ getStartedButtons.forEach(function(button) {
 const loginButton = document.querySelector(".login-btn");
 
 if (loginButton) {
-
     loginButton.addEventListener("click", function(event) {
-
         event.preventDefault();
-
-        alert(
-            "Login feature coming soon! 🔐"
-        );
-
+        window.location.href = "login.html";
     });
-
 }
 
 
